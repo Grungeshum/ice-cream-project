@@ -1,9 +1,9 @@
 // @import './example';
 
-@import './common';
-@import './sass/base/reset';
+@import './base/common';
+@import './base/reset';
 @import './utils/vars';
-@import './sass/components/container';
+@import './components/container';
 
 @import './hero\ header';
 @import './products';
