@@ -1,4 +1,4 @@
-products {
+.products {
     padding: 80px 20px 0px 20px;
     @media screen and (min-width: 768px) {
         padding: 40px 32px 60px 32px;
@@ -38,26 +38,38 @@ products {
     height: 489px;
     border-radius: 24px;
     list-style-type: none;
-    background-color:#FFB8CA; 
+    &:nth-child(1n) {
+     background-color:#FFB8CA;    
+    }
+    &:nth-child(2n) {
+        background-color:#F0D1A5;    
+    }
+    &:nth-child(3n) {
+        background-color:#C2E297;    
+    }
 }
 
 
 .item__title {
-    padding-top: 165px;
+    padding-top: 160px;
+    padding-right: 53px;
+    padding-left: 53px;
     margin-bottom: 32px;
     text-align: center;
     font-size: 20px;
     line-height: 1.15;
     letter-spacing: 0.04%;
     color: #ffffff; 
-//     &:after {
-//     content: "";
-//     margin-top: 32px;
-//     display: block;
-//     width: 25px;
-//     height: 6px;
-//     background-image: url(http://www.w3.org/2000/svg);
-// }
+    &:after {
+    content: "";
+    margin-top: 32px;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    width: 25px;
+    height: 6px;
+    background-image: url(/images/Group\ 4-min.svg);
+}
 }
 
 
@@ -70,4 +82,17 @@ products {
     letter-spacing: 0.04%;
     color: #ffffff;
     text-align: center;
+}
+
+.products__btn {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    align-items: center;
+    cursor: pointer;
+   border-radius: 50%;
+   border: none;
+   width: 40px;
+   height: 40px;
+   color:#e5e5e5
 }

@@ -82,30 +82,30 @@ link {
   }
 }
 
-products {
+.products {
   padding: 80px 20px 0px 20px;
 }
 @media screen and (min-width: 768px) {
-  products {
+  .products {
     padding: 40px 32px 60px 32px;
   }
 }
 @media screen and (min-width: 1280px) {
-  products {
+  .products {
     padding: 60px 16px 60px 16px;
   }
 }
-products .container {
+.products .container {
   max-width: 320px;
   margin: 0 auto;
 }
 @media screen and (min-width: 768px) {
-  products .container {
+  .products .container {
     width: 768px;
   }
 }
 @media screen and (min-width: 1280px) {
-  products .container {
+  .products .container {
     width: 1280px;
   }
 }
