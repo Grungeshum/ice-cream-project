@@ -121,16 +121,16 @@
     font-style: normal;
     font-weight: 700;
     font-size: 12px;
-    line-height: 170%;
+    line-height: 20px;
     
     color: var(--primary-text-color);
     @media screen and (min-width:768px) {
             font-size: 14px;
-            line-height: 174%;
+            line-height: 24px;
         }
     
         @media screen and (min-width:1200px) {
             font-size: 16px;
-            line-height: 176%;
+            line-height: 28px; 
         }
 }
