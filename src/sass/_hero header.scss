@@ -1,5 +1,6 @@
 .header {
-  position: absolute;
+  // Замінити на "absolute" після злиття з "hero"
+  position: relative;
   width: 100%;
 }
 
@@ -8,6 +9,8 @@
   justify-content: space-between;
   align-items: center;
   padding-top: 8px;
+
+  //   Тимчасовий фон, забрати після злиття з "hero"
   background-color: #ffb8ca;
 
   @media screen and (min-width: 768px) {
@@ -21,7 +24,6 @@
 
 .header-menu-list {
   display: none;
-  font-family: 'DM Sans';
   font-weight: 700;
   font-size: 16px;
   line-height: 1.31;
@@ -41,8 +43,18 @@
   align-items: center;
 }
 
-.menu-btn-open {
+.open-menu-button {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
   stroke: var(--accent-color);
+  border: none;
+  padding: 0;
+
+  &:focus,
+  &:hover {
+    cursor: pointer;
+  }
 
   @media screen and (min-width: 768px) {
     margin-right: 32px;
@@ -53,13 +65,13 @@
   }
 }
 
-.header-button {
+.header-modal-button {
   display: none;
-  font-family: 'DM Sans';
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.31;
-  color: #d41443;
+  color: var(--accent-color);
   stroke: var(--accent-color);
   background-color: #ffffff;
   border: none;
@@ -75,7 +87,7 @@
   &:focus,
   &:hover {
     background-color: #ecebeb;
-    color: #d41443;
+    color: var(--accent-color);
   }
 }
 
@@ -86,10 +98,18 @@
 .header-menu-link {
   padding-top: 10px;
   padding-bottom: 10px;
-  color: #ffffff;
+  color: var(--secondary-text-color);
   &:focus,
   &:hover {
-    color: #d41443;
+    color: var(--accent-color);
     cursor: pointer;
   }
 }
+
+// Приховує меню та модальне вікно
+
+// .is-hidden {
+//   visibility: hidden;
+//   opacity: 0;
+//   pointer-events: none;
+// }
