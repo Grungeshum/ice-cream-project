@@ -1,0 +1,115 @@
+.header {
+  // Замінити на "absolute" після злиття з "hero"
+  position: relative;
+  width: 100%;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 8px;
+
+  //   Тимчасовий фон, забрати після злиття з "hero"
+  background-color: #ffb8ca;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 32px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 37px;
+  }
+}
+
+.header-menu-list {
+  display: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.header-menu-item:not(:last-child) {
+  margin-right: 35px;
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+}
+
+.open-menu-button {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  stroke: var(--accent-color);
+  border: none;
+  padding: 0;
+
+  &:focus,
+  &:hover {
+    cursor: pointer;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-right: 32px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+}
+
+.header-modal-button {
+  display: none;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  color: var(--accent-color);
+  stroke: var(--accent-color);
+  background-color: #ffffff;
+  border: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+
+    width: 160px;
+    height: 44px;
+    border-radius: 22px;
+  }
+
+  &:focus,
+  &:hover {
+    background-color: #ecebeb;
+    color: var(--accent-color);
+  }
+}
+
+.header-button-icon {
+  margin-left: 12px;
+}
+
+.header-menu-link {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: var(--secondary-text-color);
+  &:focus,
+  &:hover {
+    color: var(--accent-color);
+    cursor: pointer;
+  }
+}
+
+// Приховує меню та модальне вікно
+
+// .is-hidden {
+//   visibility: hidden;
+//   opacity: 0;
+//   pointer-events: none;
+// }
