@@ -1,3 +1,108 @@
 <section class="hero">
-    
+  <div class="container">
+    <div class="hero__content">
+      <div class="hero-title-wrap">
+        <h1 class="hero__title">ice cream made with <span>passion</span></h1>
+        <ul class="hero-nav list">
+          <li class="hero-nav__item">
+            <a href="" class="hero-nav__btn hero-nav__btn--red">Products</a>
+          </li>
+          <li class="hero-nav__item">
+            <a href="" class="hero-nav__btn hero-nav__btn--white"
+              >How it’s made?
+            </a>
+          </li>
+        </ul>
+      </div>
+      <ul class="cafes-list list">
+        <li class="cafes-list__item">
+          <p class="cafes-list__text--first">cafes</p>
+        </li>
+        <li class="cafes-list__item">
+          <p class="cafes-list__text--second">food trucks</p>
+        </li>
+      </ul>
+    </div>
+    <div class="hero-bottom">
+      <p class="hero-bottom__text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et
+      </p>
+      <button type="button" class="hero-bottom__btn"></button>
+    </div>
+
+    <picture class="elipse">
+      <source
+        media="(max-width: 767px)"
+        srcset="./images/hero-elipse.png 1x, ./images/hero-elipse-2x.png 2x"
+      />
+      <source
+        media="(min-width: 768px) and (max-width: 1279px)"
+        srcset="
+          ./images/hero-elipse-tab.png    1x,
+          ./images/hero-elipse-tab-2x.png 2x
+        "
+      />
+      <source
+        media="(min-width: 1280px)"
+        srcset="
+          ./images/hero-elipse-pc.png    1x,
+          ./images/hero-elipse-pc-2x.png 2x
+        "
+      />
+      <img src="./images/hero-elipse-pc.png" alt="elipse" />
+    </picture>
+
+    <picture class="icecream">
+      <source
+        media="(max-width: 767px)"
+        srcset="
+          ./images/hero-header-mob-1.png    1x,
+          ./images/hero-header-mob-1-2x.png 2x
+        "
+      />
+      <source
+        media="(min-width: 768px) and (max-width: 1279px)"
+        srcset="
+          ./images/hero-header-tab-2.png    1x,
+          ./images/hero-header-tab-2-2x.png 2x
+        "
+      />
+      <source
+        media="(min-width: 1280px)"
+        srcset="./images/hero-header-2.png 1x, ./images/hero-header-2-2x.png 2x"
+      />
+      <img src="./images/hero-header-2.png" alt="icecream" />
+    </picture>
+
+    <picture class="girl">
+      <source
+        media="(min-width: 768px) and (max-width: 1279px)"
+        srcset="
+          ./images/hero-header-tab-3.png    1x,
+          ./images/hero-header-tab-3-2x.png 2x
+        "
+      />
+      <source
+        media="(min-width: 1280px)"
+        srcset="./images/hero-header-3.png 1x, ./images/hero-header-3-2x.png 2x"
+      />
+      <img src="./images/hero-header-3.png" alt="gir" />
+    </picture>
+
+    <picture class="milk">
+      <source
+        media="(min-width: 768px) and (max-width: 1279px)"
+        srcset="
+          ./images/hero-header-tab-1.png    1x,
+          ./images/hero-header-tab-1-2x.png 2x
+        "
+      />
+      <source
+        media="(min-width: 1280px)"
+        srcset="./images/hero-header-1.png 1x, ./images/hero-header-1-2x.png 2x"
+      />
+      <img src="./images/hero-header-3.png" alt="milk" />
+    </picture>
+  </div>
 </section>
