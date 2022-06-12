@@ -1,0 +1,48 @@
+<header class="header" id="header">
+  <div class="container header-container">
+    <div class="logo">
+      <picture>
+        <source
+          media="(min-width: 320px)"
+          srcset="./images/logo1.png 1x, ./images/logo2x.png 2x"
+        />
+        <img src="./images/logo1.png" alt="logo icecream" />
+      </picture>
+    </div>
+
+    <nav class="header-menu">
+      <ul class="list header-menu-list">
+        <li class="header-menu-item">
+          <a href="#header" class="link header-menu-link">Home</a>
+        </li>
+        <li class="header-menu-item">
+          <a href="#about" class="link header-menu-link">About us</a>
+        </li>
+        <li class="header-menu-item">
+          <a href="#about" class="link header-menu-link">How it’s made?</a>
+        </li>
+        <li class="header-menu-item">
+          <a href="#products" class="link header-menu-link">Our products</a>
+        </li>
+        <li class="header-menu-item">
+          <a href="#contacts" class="link header-menu-link">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="button-container">
+      <button type="button" class="open-menu-button" data-menu-open>
+        <svg class="menu-btn-open" width="23px" height="14px">
+          <use href="./images/symbol-defs.svg#icon-Burger"></use>
+        </svg>
+      </button>
+
+      <button type="button" class="header-modal-button" data-modal-open>
+        Buy now
+        <svg width="6px" height="10px" class="header-button-icon">
+          <use href="./images/symbol-defs.svg#icon-Vector-1"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
