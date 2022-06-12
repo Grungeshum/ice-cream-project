@@ -10,13 +10,20 @@
         max-width: 320px;
         margin: 0 auto;
         @media screen and (min-width: 768px) {
+<<<<<<< Updated upstream
             width: 768px;}
         @media screen and (min-width: 1280px) {
             width: 1280px;}   
+=======
+            max-width: 768px;}
+        @media screen and (min-width: 1280px) {
+            max-width: 1280px;}   
+>>>>>>> Stashed changes
     }
 }
 
 .products__text { 
+<<<<<<< Updated upstream
     text-align: center;
     margin-bottom: 16px;
     font-size: 30px;
@@ -51,15 +58,166 @@
 
 
 .item__title {
+=======
+    font-family: "Titan One";
+    text-align: center;
+    color: var(--third-text-color);
+    margin-bottom: 15px;
+    font-size: 18px;
+    line-height: 1.17;
+    @media screen and (min-width: 768px) {
+        margin-bottom: 18px;
+        font-size: 26px;
+        line-height: 1.15;  
+    }
+    @media screen and (min-width: 1280px) {
+        margin-bottom: 16px;
+        font-size: 30px;
+        line-height: 1.13;  
+    }
+}
+
+.products__title {
+    font-family: "Titan One";
+    text-align: center;
+    margin-top: 16px;
+    margin-bottom: 261px;
+    font-size: 34px;
+    line-height: 1.15;
+    color: var(--accent-color);
+    @media screen and (min-width: 768px) {
+        margin-bottom: 16px;
+        font-size: 48px;
+        line-height: 1.15;  
+    }
+    @media screen and (min-width: 1280px) {
+        margin-bottom: 0px;
+        font-size: 58px;
+        line-height: 1.14;  
+    }
+}
+
+.products__list {
+    margin-bottom: 0;
+    @media screen and (min-width: 768px) {
+        display: flex;  
+        flex-wrap: wrap;
+        margin-bottom: -60px;
+        margin-left: -60px;
+      }
+}
+
+.products__item {
+    min-width: 280px;
+    min-height: 489px;
+    border-radius: 24px;
+    list-style-type: none;
+    &:nth-child(1) {
+     background-color: var (--third-text-color);    
+    }
+    &:nth-child(2) {
+        background-color:#F0D1A5;    
+    }
+    &:nth-child(3) {
+        background-color:#C2E297;    
+    }
+    margin-right: 20px;
+    @media screen and (min-width: 768px) {
+        min-width: 224px;
+        min-height: 473px;
+        width: calc(100% / 3 - 64px); 
+        margin-right: 16px;
+    }
+    @media screen and (min-width: 1280px) {
+        min-width: 395px;
+        min-height: 535px;
+        width: calc(100% / 3 - 32px); 
+        margin-right: 32px;
+
+    }
+}
+
+
+.products__item--icecream::before {
+    content: "";
+    position: absolute;
+    margin-bottom: 32px;
+    top: 10px;
+    background-image: url(../images/products-1.png);
+    background-repeat: no-repeat;
+    @media screen and (min-width:320px) {
+        width: 280px;
+        height: 280px;   
+      }
+    @media screen and (min-width:768px) {
+        width: 224px;
+        height: 224px;   
+      }
+    @media screen and (min-width:1280px) {
+        width: 394px;
+        height: 394px;   
+      }
+    
+}
+
+.products__item--icecoffee::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    margin-bottom: 32px;
+    top: 10px;
+    background-image: url(../images/products-2.png);
+    background-repeat: no-repeat;
+    @media screen and (min-width:320px) {
+        height: 280px;   
+      }
+    @media screen and (min-width:768px) {
+        height: 224px;   
+      }
+    @media screen and (min-width:1280px) {
+        height: 394px;   
+      }
+}
+
+.products__item--milkshakes::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    margin-bottom: 32px;
+    top: 10px;
+    background-image: url(../images/products-3.png);
+    background-repeat: no-repeat;
+    @media screen and (min-width:320px) {
+        height: 280px;   
+      }
+    @media screen and (min-width:768px) {
+        height: 224px;   
+      }
+    @media screen and (min-width:1280px) {
+        height: 394px;   
+      }
+}
+
+.item__title {
+    font-family: "Titan One";
+>>>>>>> Stashed changes
     padding-top: 160px;
     padding-right: 53px;
     padding-left: 53px;
     margin-bottom: 32px;
     text-align: center;
+<<<<<<< Updated upstream
     font-size: 20px;
     line-height: 1.15;
     letter-spacing: 0.04%;
     color: #ffffff; 
+=======
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.15;
+    letter-spacing: 0.04%;
+    color: var(--primary-bg-color); 
+>>>>>>> Stashed changes
     &:after {
     content: "";
     margin-top: 32px;
@@ -68,12 +226,20 @@
     display: block;
     width: 25px;
     height: 6px;
+<<<<<<< Updated upstream
     background-image: url(/images/Group\ 4-min.svg);
+=======
+    background-image: url(../images/symbol-defs.svg);
+>>>>>>> Stashed changes
 }
 }
 
 
 .item__text {
+<<<<<<< Updated upstream
+=======
+    font-family: "DM Sans";
+>>>>>>> Stashed changes
     margin: 32px auto;
     width: 200px;
     height: 124px;
@@ -82,17 +248,41 @@
     letter-spacing: 0.04%;
     color: #ffffff;
     text-align: center;
+<<<<<<< Updated upstream
+=======
+    @media screen and (min-width: 768px) {
+       width: 160px;
+       height: 150px; 
+       font-size: 14px; 
+    }
+    @media screen and (min-width: 1280px) {
+        width: 245px;
+        height: 106px; 
+        font-size: 16px; 
+    }
+>>>>>>> Stashed changes
 }
 
 .products__btn {
     display: block;
     margin-right: auto;
     margin-left: auto;
+<<<<<<< Updated upstream
+=======
+    margin-bottom: 40px;
+>>>>>>> Stashed changes
     align-items: center;
     cursor: pointer;
    border-radius: 50%;
    border: none;
    width: 40px;
    height: 40px;
+<<<<<<< Updated upstream
    color:#e5e5e5
+=======
+   color:#e5e5e5;
+ @media screen and (min-width: 1280px) {
+    margin-bottom: 60px; 
+ }
+>>>>>>> Stashed changes
 }
