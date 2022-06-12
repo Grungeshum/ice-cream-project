@@ -4,15 +4,17 @@
         padding: 40px 32px 60px 32px;
     }
     @media screen and (min-width: 1280px) {
-        padding: 60px 16px 60px 16px
+        padding: 60px 16px 60px 16px;
     }
     .container {
         max-width: 320px;
         margin: 0 auto;
         @media screen and (min-width: 768px) {
-            max-width: 768px;}
+            max-width: 768px;
+        }
         @media screen and (min-width: 1280px) {
-            max-width: 1280px;}   
+            max-width: 1280px;
+        }   
     }
 }
 
@@ -137,10 +139,7 @@
         width: 394px;
         height: 394px;   
       }
-}
-
-
-    
+}  
 }
 
 .products__item--milkshakes {
@@ -187,7 +186,7 @@
     display: block;
     width: 25px;
     height: 6px;
-    background-image: url(/images/Group\ 4-min.svg);
+    background-image: url(../images/Group\ 4-min.svg);
 }
 }
 
@@ -232,6 +231,6 @@
 }
 
 .btn__vector {
-stroke: var(--accent-color);
+fill: var(--accent-color);
 }
 
