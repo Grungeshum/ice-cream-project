@@ -1,6 +1,5 @@
 .contacts{
     background: #FFF5F6;
-    margin-top: -103px;
 }
 
 
@@ -19,6 +18,7 @@
         display: flex;
         justify-content: center;
         margin-right: -30px;
+        
         
     }
    
@@ -219,6 +219,11 @@
     background: #D41342;
     border: none;
     border-radius: 22px;
+    transition: background-color 280ms cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover,
+        &:focus {
+            background: #C7133E;
+        }
 
 }
 .contacts-btn__button-far {
@@ -233,5 +238,10 @@
     background: var(--secondary-text-color);
     border: none;
     border-radius: 22px;
+    transition: background-color 280ms cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover,
+        &:focus {
+            background: #ECEBEB;
+        }
 
 }
