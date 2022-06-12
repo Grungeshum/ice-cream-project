@@ -1,7 +1,7 @@
 .header {
-  // Замінити на "absolute" після злиття з "hero"
-  position: relative;
+  position: absolute;
   width: 100%;
+  z-index: 1;
 }
 
 .header-container {
@@ -9,9 +9,6 @@
   justify-content: space-between;
   align-items: center;
   padding-top: 8px;
-
-  //   Тимчасовий фон, забрати після злиття з "hero"
-  background-color: #ffb8ca;
 
   @media screen and (min-width: 768px) {
     padding-top: 32px;
