@@ -187,7 +187,7 @@
     display: block;
     width: 25px;
     height: 6px;
-      background-image: url;  
+    background-image: url(/images/Group\ 4-min.svg);
 }
 }
 
@@ -214,7 +214,7 @@
     }
 }
 
-.btn__vector {
+.products__btn {
     display: block;
     margin-right: auto;
     margin-left: auto;
@@ -229,5 +229,9 @@
  @media screen and (min-width: 1280px) {
     margin-bottom: 60px; 
  }
+}
+
+.btn__vector {
+stroke: var(--accent-color);
 }
 
