@@ -4,25 +4,9 @@
     @media screen and (min-width:768px){
         padding: 80px 14px 84px 14px;
     }
-        @media screen and (min-width:1200px){
+        @media screen and (min-width:1280px){
         padding: 120px 0px; 
         }
-    & .container{
-    width: 100%;
-    @media screen and (min-width:768px){
-        width: 768px; 
-        height: 226px;
-        margin: 0; 
-        margin-left: 16px; 
-        padding-right: 193px; 
-    }
-        @media screen and (min-width:1200px) {
-            width: 1200px;
-            height: 404px;
-            padding-right: 0px;
-            margin-left: 30px;
-        }
-    }
 }
 .advantages-list__item:not(:last-child){
     margin-bottom: 32px; 
@@ -41,7 +25,7 @@
     flex-basis: calc((100% - 22px) / 3);
     margin-right: 22px;  
 }
-@media screen and (min-width:1200px) {
+@media screen and (min-width:1280px) {
     flex-basis: calc(100% / 3 - 106px); 
     margin-right: 106px; 
 }
@@ -57,7 +41,7 @@
         @media screen and (min-width:768px){
             margin-bottom: 36px;
         }
-                @media screen and (min-width:1200px) {
+                @media screen and (min-width:1280px) {
                     margin-bottom: 40px;
                 }
     }
@@ -73,7 +57,7 @@
         @media screen and (min-width:768px) {
                 margin-bottom: 36px;
             }
-                        @media screen and (min-width:1200px) {
+                        @media screen and (min-width:1280px) {
                             margin-bottom: 40px;
                         }
     }
@@ -89,7 +73,7 @@
         @media screen and (min-width:768px) {
                 margin-bottom: 36px;
             }
-                        @media screen and (min-width:1200px) {
+                        @media screen and (min-width:1280px) {
                             margin-bottom: 40px;
                         }
     }
@@ -109,7 +93,7 @@
         font-size: 48px;
         line-height: 1.15;
     }
-    @media screen and (min-width:1200px) {
+    @media screen and (min-width:1280px) {
         font-size: 58px;
         line-height: 1.14;
 
@@ -124,13 +108,19 @@
     line-height: 1.67;
     
     color: var(--primary-text-color);
+    width: 230px;
+    height: 36px;
     @media screen and (min-width:768px) {
-            font-size: 14px;
-            line-height: 1.71;
+        font-size: 14px;
+        line-height: 1.71;
+        width: 180px;
+        height: 71px;
         }
     
-        @media screen and (min-width:1200px) {
+        @media screen and (min-width:1280px) {
             font-size: 16px;
             line-height: 1.75; 
+            width: 288px;
+            height: 52px;
         }
 }
