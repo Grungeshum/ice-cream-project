@@ -176,7 +176,7 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 1.15;
-    letter-spacing: 0.04%;
+    letter-spacing: 0.04;
     color: #ffffff; 
     &:after {
     content: "";
@@ -198,7 +198,7 @@
     height: 124px;
     font-size: 14px;
     line-height: 1.79;
-    letter-spacing: 0.04%;
+    letter-spacing: 0.04;
     color: #ffffff;
     text-align: center;
     @media screen and (min-width: 768px) {
