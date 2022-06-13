@@ -42,16 +42,16 @@
 
     span {
       font-size: 48px;
-      line-height: 96.5%;
+      line-height: 0.95;
       text-transform: uppercase;
       color: var(--accent-color);
       @media screen and (min-width: 768px) {
         font-size: 34px;
-        line-height: 90.5%;
+        line-height: 0.89;
       }
       @media screen and (min-width: 1280px) {
         font-size: 58px;
-        line-height: 90.5%;
+        line-height: 0.89;
       }
     }
   }
