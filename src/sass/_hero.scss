@@ -1,6 +1,7 @@
 .hero {
   width: 100%;
   background-color: #ffb8ca;
+  overflow: hidden;
 
   .container {
     box-sizing: border-box;
@@ -60,6 +61,7 @@
   display: flex;
   @media screen and (min-width: 768px) {
     padding-right: 18px;
+    padding-left: 18px;
   }
 }
 
@@ -121,7 +123,7 @@
     color: var(--accent-color);
     &:hover,
     &:focus {
-      background-color: #ecebeb;
+      background-color: #ECEBEB;
     }
   }
 }
@@ -268,7 +270,7 @@
   &__text {
     width: 114px;
     font-size: 8px;
-    line-height: 150%;
+    line-height: 1.5;
     color: var(--secondary-text-color);
     margin-bottom: 7px;
     @media screen and (min-width: 1280px) {
@@ -309,15 +311,23 @@
 // ------------ PICTURES --------------
 
 .elipse {
+  width: 346px;
+  height: 344px;
+  background-color: #ffa5ba;
+  border-radius: 50%;
   position: absolute;
-  right: 0;
+  right: -62px;
   top: 83;
 
   @media screen and (min-width: 768px) {
+    width: 335px;
+    height: 333px;
     right: 185px;
     top: 43px;
   }
   @media screen and (min-width: 1280px) {
+    width: 534px;
+    height: 534px;
     right: 226px;
     top: 53px;
   }
