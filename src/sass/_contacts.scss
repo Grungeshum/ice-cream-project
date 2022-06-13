@@ -1,5 +1,21 @@
 .contacts{
-    background: #FFF5F6;
+    background-image: linear-gradient(to bottom,
+                #FFFFFF 24%,
+                #FFF5F6 24%,
+                );
+        @include tablet {
+                background-image: linear-gradient(to bottom,
+                #FFFFFF 15%,
+                #FFF5F6 15%,
+                );
+            }
+        
+            @include desktop {
+                background-image: linear-gradient(to bottom,
+                #FFFFFF 15%,
+                #FFF5F6 15%,
+                );
+            }
 }
 
 
@@ -18,7 +34,6 @@
             display: flex;
             justify-content: center;
             margin-right: -30px;  
-            margin-top: -200px; 
     } 
 }
 
@@ -31,16 +46,16 @@
     max-width: 280px;
     height: 412px;
         @include tablet {
-        max-width: 224px;
-        height: 538px;
-        padding: 40px 32px;
-        margin-right: 30px;
+            max-width: 224px;
+            height: 538px;
+            padding: 40px 32px;
+            margin-right: 30px;
         }
         @include desktop{
-        max-width: 395px;
-        height: 538px;
-        padding: 40px;
-        margin-right: 30px;
+            max-width: 395px;
+            height: 538px;
+            padding: 40px;
+            margin-right: 30px;
         }
  
 }
@@ -87,10 +102,10 @@
     letter-spacing: 0.04em;
     color: var(--primary-text-color);
         @include tablet {
-        font-size: 14px;
+            font-size: 14px;
         }
         @include desktop{
-        font-size: 16px;
+            font-size: 16px;
         }
     
 }
@@ -103,13 +118,13 @@
     letter-spacing: 0.04em;
     color: #907E82;
         @include tablet {
-        font-size: 14px;
-        line-height: 1.66;
+            font-size: 14px;
+            line-height: 1.66;
         }
     
         @include desktop {
-        font-size: 16px;
-        line-height: 1.83;
+            font-size: 16px;
+            line-height: 1.83;
         }
     
 }
@@ -119,14 +134,14 @@
     letter-spacing: 0.04em;
     color: var(--primary-text-color);
         @include tablet {
-        font-size: 14px;
-        line-height: 1.86;
-        }
+            font-size: 14px;
+            line-height: 1.86;
+            }
     
         @include desktop {
-        font-size: 16px;
-        line-height: 1.86;
-        }
+            font-size: 16px;
+            line-height: 1.86;
+            }
 }
 
 .contacts__hour{
@@ -135,24 +150,24 @@
     line-height: 1.86;
     color:var(--third-text-color);
         @include tablet {
-        font-size: 14px;
-        line-height: 1.86;
-        }
+            font-size: 14px;
+            line-height: 1.86;
+            }
     
         @include desktop {
-        font-size: 16px;
-        line-height: 1.86;
-        }
+            font-size: 16px;
+            line-height: 1.86;
+            }
 
 }
 .day--margin{
     margin-bottom: 8px;
         @include tablet {
-        margin-bottom: 12px;
+            margin-bottom: 12px;
         }
     
         @include desktop {
-        margin-bottom: 12px;
+            margin-bottom: 12px;
         }
 
 }
