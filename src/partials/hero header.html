@@ -1,7 +1,13 @@
 <header class="header" id="header">
   <div class="container header-container">
     <div class="logo">
-      <img src="./images/logo1.png" alt="logo icecream" />
+      <picture>
+        <source
+          media="(min-width: 320px)"
+          srcset="./images/logo1.png 1x, ./images/logo2x.png 2x"
+        />
+        <img src="./images/logo1.png" alt="logo icecream" />
+      </picture>
     </div>
 
     <nav class="header-menu">
