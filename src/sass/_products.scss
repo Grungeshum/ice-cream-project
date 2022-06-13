@@ -1,5 +1,5 @@
 .products {
-  padding: 80px 20px 0px 20px;
+  padding: 80px 0px 40px 0px;
   @media screen and (min-width: 768px) {
     padding: 40px 32px 60px 32px;
   }
@@ -58,17 +58,16 @@
 }
 
 .products__list {
-  margin-top: 261px;
   margin-bottom: 0;
   @media screen and (min-width: 768px) {
     display: flex;
-    flex-wrap: wrap;
-    margin-bottom: -60px;
-    margin-left: -60px;
+    justify-content: center;
+    margin-right: -16px;
   }
 }
 
 .products__item {
+  margin-top: 148px;
   min-width: 280px;
   min-height: 489px;
   border-radius: 24px;
@@ -85,16 +84,12 @@
     min-height: 535px;
     width: calc(100% / 3 - 32px);
     margin-right: 32px;
+    margin-top: 258px;
   }
 }
 
 .products-card {
   position: relative;
-  @media screen and (min-width: 320px) {
-    &:not(:last-child) {
-      margin-bottom: 140px;
-    }
-  }
 }
 .products__item--icecream {
   background-color: #ffb8ca;
@@ -119,12 +114,11 @@
     @media screen and (min-width: 768px) {
       width: 224px;
       height: 224px;
-      top: -138px;
+      top: 0px;
     }
     @media screen and (min-width: 1280px) {
       width: 394px;
       height: 394px;
-      top: -261px;
     }
   }
 }
@@ -149,12 +143,11 @@
     @media screen and (min-width: 768px) {
       width: 224px;
       height: 224px;
-      top: -138px;
+      top: 0px;
     }
     @media screen and (min-width: 1280px) {
       width: 394px;
       height: 394px;
-      top: -261px;
     }
   }
 }
@@ -176,16 +169,16 @@
       width: 280px;
       height: 280px;
       top: -140px;
+      background-image: url(../images/products-mob-3.png);
     }
     @media screen and (min-width: 768px) {
       width: 224px;
       height: 224px;
-      top: -138px;
+      top: 0px;
     }
     @media screen and (min-width: 1280px) {
       width: 394px;
       height: 394px;
-      top: -261px;
     }
   }
 }
@@ -208,9 +201,17 @@
     margin-right: auto;
     margin-left: auto;
     display: block;
-    width: 25px;
+    width: 26px;
     height: 6px;
-    background-image: url(../images/symbol-defs.svg#icon-rounds);
+    background-image: url(../images/dots2.svg);
+  }
+  @media screen and (min-width: 768px) {
+    padding-top: 118px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 30px;
+    padding-top: 165px;
   }
 }
 
@@ -248,11 +249,13 @@
   width: 40px;
   height: 40px;
   color: #e5e5e5;
-  @media screen and (min-width: 1280px) {
-    margin-bottom: 60px;
-  }
-}
+  background-image: url(../images/arrow-right-4.png);
+  background-size: contain;
+  background-repeat: no-repeat;
 
-.btn__vector {
-  stroke: var(--accent-color);
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/arrow-right-4-2x.png);
+  }
 }
