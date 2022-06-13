@@ -7,13 +7,17 @@
         padding: 60px 16px 60px 16px;
     }
     .container {
-        max-width: 320px;
+        width: 100%;
         margin: 0 auto;
         @media screen and (min-width: 768px) {
-            max-width: 768px;
+            height: 830px;
+            margin-right: 32px;
+            margin-left: 32px;
         }
         @media screen and (min-width: 1280px) {
-            max-width: 1280px;
+            height: 1030px;
+            margin-right: 16px;
+            margin-top: 16px;
         }   
     }
 }
@@ -40,6 +44,7 @@
 
 .products__title {
     font-family: "Titan One";
+    margin-bottom: 8px;
     text-align: center;
     font-size: 34px;
     line-height: 1.15;
@@ -63,8 +68,8 @@
     @media screen and (min-width: 768px) {
         display: flex;  
         flex-wrap: wrap;
-        margin-bottom: -60px;
-        margin-left: -60px;
+        margin-bottom: -64px;
+        margin-left: -64px;
       }
 }
 
@@ -94,7 +99,6 @@
 }
 .products__item--icecream {
     background-color:#FFB8CA; 
-     
     &:before {
     content: "";
     position: absolute;
@@ -116,8 +120,8 @@
       }
     
 }
-
 }
+
 .products__item--icecoffee {
     background-color:#F0D1A5;
     &:before {
@@ -230,6 +234,6 @@
  }
 }
 
-.btn__vector {
-stroke: var(--accent-color);
-}
+// .btn__vector {
+// stroke: var(--accent-color);
+// }
