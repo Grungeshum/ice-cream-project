@@ -243,20 +243,20 @@ link {
 }
 .hero__title span {
   font-size: 48px;
-  line-height: 0.95;
+  line-height: 96.5%;
   text-transform: uppercase;
   color: var(--accent-color);
 }
 @media screen and (min-width: 768px) {
   .hero__title span {
     font-size: 34px;
-    line-height: 0.89;
+    line-height: 90.5%;
   }
 }
 @media screen and (min-width: 1280px) {
   .hero__title span {
     font-size: 58px;
-    line-height: 0.89;
+    line-height: 90.5%;
   }
 }
 
@@ -266,6 +266,7 @@ link {
 @media screen and (min-width: 768px) {
   .hero__content {
     padding-right: 18px;
+    padding-left: 18px;
   }
 }
 
@@ -330,7 +331,7 @@ link {
   color: var(--accent-color);
 }
 .hero-nav__btn--white:hover, .hero-nav__btn--white:focus {
-  background-color: #ecebeb;
+  background-color: #ECEBEB;
 }
 
 .cafes-list {
@@ -501,7 +502,7 @@ link {
   .hero-bottom__text {
     width: 200px;
     font-size: 14px;
-    line-height: 1.42;
+    line-height: 140%;
   }
 }
 .hero-bottom__btn {
