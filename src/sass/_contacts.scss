@@ -8,26 +8,20 @@
     flex-wrap: wrap;
     justify-content: center;
     margin-bottom: -20px;
-    @include tablet {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin-right: -30px;
+        @include tablet {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-right: -30px;
     }
-    @include desktop{
-        display: flex;
-        justify-content: center;
-        margin-right: -30px;
-        
-        
-    }
-   
-    
-    
+        @include desktop{
+            display: flex;
+            justify-content: center;
+            margin-right: -30px;  
+            margin-top: -200px; 
+    } 
 }
-.contacts-list{
-    display: block;
-}
+
 .contacts-item {
     background: #FFFFFF;
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
@@ -50,6 +44,7 @@
         }
  
 }
+
 .contacts-object{
     width: max-content;
     height: 28px;
@@ -64,15 +59,17 @@
     letter-spacing: 0.04em;
     color:var(--secondary-text-color);
 }
+
 .object-color--green{
     background: #C2E297;
 }
+
 .contacts-list__item{
     padding-top: 24px;
     padding-bottom: 24px;
     &:not(:last-child){
     border-bottom: 1px solid #E1E1E1;
-    @include tablet {
+        @include tablet {
             padding-top: 32px;
             padding-bottom: 32px;
         }
@@ -83,6 +80,7 @@
         }
     }
 }
+
 .contacts-list__city{
     font-size: 12px;
     line-height: 1.86;
@@ -96,6 +94,7 @@
         }
     
 }
+
 .contacts-list__text{
     max-width: 250px;
     font-weight: 500;
@@ -162,7 +161,7 @@
     font-size: 16px;
     line-height: 1.5;
     color: #907E82;
-    @include tablet {
+        @include tablet {
             font-size: 14px;
             line-height: 1.66;
         }
@@ -174,9 +173,9 @@
 }
 .contacts-btn{
     display: block;
-        align-items: center;
-        text-align: center;
-        margin-top: 32px;
+    align-items: center;
+    text-align: center;
+    margin-top: 32px;
         @include mobile {
             margin-bottom: -10px;
         }
@@ -195,19 +194,15 @@
         }
 }
 .contacts-btn__item{
-    @include mobile {
+        @include mobile {
             margin-bottom: 10px;
         }
-        
         @include tablet {
-            margin-right: 15px;
-            
+            margin-right: 15px;    
         }
         @include desktop {
-            margin-right: 15px;
-            
-        }
-    
+            margin-right: 15px;    
+        }  
 }
 
 .contacts-btn__button-loc{
