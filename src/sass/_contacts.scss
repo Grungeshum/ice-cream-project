@@ -3,7 +3,7 @@
                 #FFFFFF 24%,
                 #FFF5F6 24%,
                 );
-        @include tablet {
+            @include tablet {
                 background-image: linear-gradient(to bottom,
                 #FFFFFF 15%,
                 #FFF5F6 15%,
@@ -239,6 +239,7 @@
         }
 
 }
+
 .contacts-btn__button-far {
     font-weight: 700;
     font-size: 16px;
@@ -258,3 +259,4 @@
         }
 
 }
+// update
