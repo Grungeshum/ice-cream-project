@@ -1,19 +1,21 @@
 .products {
   padding: 80px 0px 40px 0px;
   @media screen and (min-width: 768px) {
-    padding: 40px 32px 60px 32px;
+    padding: 40px 0px 60px 0px;
   }
   @media screen and (min-width: 1280px) {
-    padding: 60px 16px 60px 16px;
+    padding: 60px 0 60px 0;
   }
   .container {
     max-width: 320px;
     margin: 0 auto;
     @media screen and (min-width: 768px) {
       max-width: 768px;
+      padding: 0 32px 0 32px;
     }
     @media screen and (min-width: 1280px) {
       max-width: 1280px;
+      padding: 0 16px 0 16px;
     }
   }
 }

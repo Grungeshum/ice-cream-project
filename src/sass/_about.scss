@@ -4,6 +4,14 @@ img {
   height: auto;
 }
 
+.about .container {
+  @media screen and (min-width: 768px) {
+    padding: 0 32px 0 32px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding: 0 16px 0 16px;
+  }
+}
 .about__cow {
   display: block;
   margin: 0 auto;
