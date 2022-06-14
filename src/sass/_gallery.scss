@@ -1,15 +1,21 @@
 .gallery {
+  background: linear-gradient(
+    to bottom,
+    var(--bg-second) 30%,
+    var(--primari-white-color) 70%
+  );
 
-    background: linear-gradient(to bottom,
-            var(--bg-second) 30%,
-            var(--primari-white-color) 70%);
-
-  margin-bottom: 120px;
-  margin-top: -120px;
-  @media screen and (min-width: 768px) {
-    margin-top: 80px;
+  @media screen and (min-width: 320px) {
+    margin-top: -50px;
+    margin-bottom: 80px;
   }
- 
+  @media screen and (min-width: 768px) {
+    margin-top: -130px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 120px;
+    margin-top: -130px;
+  }
 }
 
 .gallery__list {
@@ -104,11 +110,9 @@
 }
 
 .photo-box:hover {
-
-    position: absolute;
-    z-index: 10;
-    transform: scale(135%, 135%);
-
+  position: absolute;
+  z-index: 10;
+  transform: scale(135%, 135%);
 }
 
 .photo-box__image {
