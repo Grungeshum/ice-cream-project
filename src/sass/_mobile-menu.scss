@@ -57,7 +57,12 @@ a {
   }
 }
 .close-button__icon {
+  stroke: #ffffff;
   fill: var(--secondary-text-color);
+
+  &:hover {
+    stroke: var(--accent-color);
+  }
 }
 
 .mobile-button {
