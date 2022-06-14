@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
     <title>Page title</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -10,7 +15,12 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap"
       rel="stylesheet"
     />
+
     <link rel="stylesheet" href="./sass/index.scss" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <script type="module" src="./index.js"></script>
   </head>
   <body>
@@ -24,11 +34,13 @@
     <include src="./partials/customer-reviews.html"></include>
     <include src="./partials/contacts.html"></include>
     <include src="./partials/footer.html"></include>
-    <include src="./partials/modals.html"></include>
 
+    <include src="./partials/mobile-menu.html"></include>
+    <include src="./partials/modals.html"></include>
     <!-- ❗️❗️❗️ Add partials like so for every page -->
 
     <script type="module" src="../js/menu.js"></script>
     <script type="module" src="../js/modal.js"></script>
+    <script type="module" src="../js/mob-menu-modal.js"></script>
   </body>
 </html>

@@ -1,3 +1,4 @@
+
 .contacts{
     background-image: linear-gradient(to bottom,
                 #FFFFFF 23%,
@@ -19,10 +20,21 @@
 }
 
 
-.contacts-card{
+  @include desktop {
+    background-image: linear-gradient(to bottom, #ffffff 15%, #fff5f6 15%);
+  }
+}
+
+.contacts-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: -20px;
+  @include tablet {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+
     margin-bottom: -20px;
         @include tablet {
             display: flex;
@@ -35,12 +47,22 @@
             justify-content: center;
             margin-right: -30px;  
     } 
+
 }
 
 .contacts-item {
-    background: #FFFFFF;
-    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  background: #ffffff;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  padding: 40px 32px;
+  border-radius: 24px;
+  margin-bottom: 20px;
+  max-width: 280px;
+  height: 412px;
+  @include tablet {
+    max-width: 224px;
+    height: 538px;
     padding: 40px 32px;
+
     border-radius: 24px;
     margin-bottom: 20px;
     max-width: 280px;
@@ -108,8 +130,16 @@
             padding-top: 32px;
             padding-bottom: 32px;
         }
+
     }
+
+    @include desktop {
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
+  }
 }
+
 
 .contacts-list__city{
     font-size: 12px;
@@ -247,23 +277,62 @@
 
 .contacts-btn__button-loc{
     font-weight: 700;
-    font-size: 16px;
-    line-height: 21px;
-    align-items: center;
-    text-align: center;
-    width: 198px;
-    height: 44px;
-    color:var(--secondary-text-color);
-    background: #D41342;
-    border: none;
-    border-radius: 22px;
-    transition: background-color 280ms cubic-bezier(0.4, 0, 0.2, 1);
-        &:hover,
-        &:focus {
-            background: #C7133E;
-        }
 
+    font-size: 16px;
+    line-height: 1.83;
+  }
 }
+.contacts-btn {
+  display: block;
+  align-items: center;
+  text-align: center;
+  margin-top: 32px;
+  @include mobile {
+    margin-bottom: -10px;
+  }
+
+  @include tablet {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+  }
+  @include desktop {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+  }
+}
+.contacts-btn__item {
+  @include mobile {
+    margin-bottom: 10px;
+  }
+  @include tablet {
+    margin-right: 15px;
+  }
+  @include desktop {
+    margin-right: 15px;
+  }
+}
+
+.contacts-btn__button-loc {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  align-items: center;
+  text-align: center;
+  width: 198px;
+  height: 44px;
+  color: var(--secondary-text-color);
+  background: #d41342;
+  border: none;
+  border-radius: 22px;
+  transition: background-color 280ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background: #c7133e;
+  }
+}
+
 
 .contacts-btn__button-far {
     font-weight: 700;
@@ -284,4 +353,4 @@
         }
 
 }
-// update
+
