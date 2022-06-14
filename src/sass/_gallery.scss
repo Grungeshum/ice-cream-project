@@ -1,14 +1,15 @@
 .gallery {
+
+    background: linear-gradient(to bottom,
+            var(--bg-second) 30%,
+            var(--primari-white-color) 70%);
+
   margin-bottom: 120px;
   margin-top: -120px;
   @media screen and (min-width: 768px) {
     margin-top: 80px;
   }
-  background: linear-gradient(
-    to bottom,
-    var(--bg-second) 10%,
-    var(--primari-white-color) 90%
-  );
+ 
 }
 
 .gallery__list {
@@ -103,9 +104,11 @@
 }
 
 .photo-box:hover {
-  position: absolute;
-  z-index: 10;
-  transform: scale(105%, 105%);
+
+    position: absolute;
+    z-index: 10;
+    transform: scale(135%, 135%);
+
 }
 
 .photo-box__image {
