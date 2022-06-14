@@ -6,12 +6,20 @@
   margin: 0 auto 32px;
   width: 85px;
   height: 85px;
+  opacity: 0.5;
+  transform: scale(0.4);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   @media screen and (min-width: 768px) {
     margin-bottom: 20px;
   }
   @media screen and (min-width: 1280px) {
     margin-bottom: 16px;
   }
+}
+.slick-active .cust-review__image {
+  opacity: 1;
+  transform: scale(1);
 }
 .review-box__meta {
   width: 100%;
@@ -45,6 +53,8 @@
   z-index: 25;
   width: 157px;
   background-image: repeating-linear-gradient(#0000, #0000 29px, #e1e1e1 31px);
+  transform: translateY(1000px);
+  transition: transform 1.5s;
   &::before {
     content: url(/src/images/svg/“.svg);
     position: absolute;
@@ -84,6 +94,10 @@
     height: 75px;
   }
 }
+.slick-active .review-box__text {
+  transform: translateY(0);
+  transition: transform 0.5s;
+}
 .review-box__reviewer {
   padding-top: 24px;
   position: relative;
@@ -96,6 +110,7 @@
   z-index: 25;
   margin-bottom: 23px;
   margin-top: 16px;
+  transform: translateX(1000px);
   @media screen and (min-width: 768px) {
     margin-top: 0;
     margin-bottom: 32px;
@@ -114,6 +129,10 @@
     transform: translateX(-50%);
     background-image: url(/src/images/svg/dots-1.svg);
   }
+}
+.slick-active .review-box__reviewer {
+  transform: translateX(0);
+  transition: transform 1s;
 }
 
 // slider
@@ -157,4 +176,7 @@
 }
 .slick-dots li:not(:last-child) {
   margin-right: 18px;
+}
+.slider__item {
+  overflow: hidden;
 }
