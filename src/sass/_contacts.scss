@@ -1,5 +1,5 @@
 .contacts {
-  background-image: linear-gradient(to bottom, #ffffff 24%, #fff5f6 24%);
+  background-image: linear-gradient(to bottom, #ffffff 23%, #fff5f6 23%);
   @include tablet {
     background-image: linear-gradient(to bottom, #ffffff 15%, #fff5f6 15%);
   }
@@ -18,156 +18,237 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-right: -30px;
-  }
-  @include desktop {
-    display: flex;
-    justify-content: center;
-    margin-right: -30px;
-  }
-}
 
-.contacts-item {
-  background: #ffffff;
-  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
-  padding: 40px 32px;
-  border-radius: 24px;
-  margin-bottom: 20px;
-  max-width: 280px;
-  height: 412px;
-  @include tablet {
-    max-width: 224px;
-    height: 538px;
-    padding: 40px 32px;
-    margin-right: 30px;
-  }
-  @include desktop {
-    max-width: 395px;
-    height: 538px;
-    padding: 40px;
-    margin-right: 30px;
-  }
-}
-
-.contacts-object {
-  width: max-content;
-  height: 28px;
-  padding-left: 16px;
-  padding-right: 16px;
-  background: #f0d1a5;
-  border-radius: 6px;
-  text-align: center;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.86;
-  text-align: center;
-  letter-spacing: 0.04em;
-  color: var(--secondary-text-color);
-}
-
-.object-color--green {
-  background: #c2e297;
-}
-
-.contacts-list__item {
-  padding-top: 24px;
-  padding-bottom: 24px;
-  &:not(:last-child) {
-    border-bottom: 1px solid #e1e1e1;
+    margin-bottom: -20px;
     @include tablet {
-      padding-top: 32px;
-      padding-bottom: 32px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-right: -30px;
+    }
+    @include desktop {
+      display: flex;
+      justify-content: center;
+      margin-right: -30px;
+    }
+  }
+
+  .contacts-item {
+    background: #ffffff;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    padding: 40px 32px;
+    border-radius: 24px;
+    margin-bottom: 20px;
+    max-width: 280px;
+    height: 412px;
+    @include tablet {
+      max-width: 224px;
+      height: 538px;
+      padding: 40px 32px;
+
+      border-radius: 24px;
+      margin-bottom: 20px;
+      max-width: 280px;
+      height: 412px;
+      @include tablet {
+        max-width: 224px;
+        height: 528px;
+        padding: 40px 32px;
+        margin-right: 30px;
+      }
+      @include desktop {
+        max-width: 395px;
+        height: 538px;
+        padding: 40px;
+        margin-right: 30px;
+      }
+    }
+
+    .contacts-object {
+      width: max-content;
+      height: max-content;
+      text-align: center;
+      align-items: center;
+      padding: 0px 24px 0px 24px;
+      background: #f0d1a5;
+      border-radius: 6px;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 1.5;
+      letter-spacing: 0.04em;
+      color: var(--secondary-text-color);
+      @include tablet {
+        height: 28px;
+        font-size: 16px;
+        padding: 0px 16px 0px 16px;
+        line-height: 1.86;
+      }
+
+      @include desktop {
+        height: 28px;
+        font-size: 16px;
+        padding: 0px 16px 0px 16px;
+        line-height: 1.86;
+      }
+    }
+
+    .object-color--green {
+      background: #c2e297;
+    }
+
+    .contacts-list__item {
+      padding-top: 24px;
+      padding-bottom: 24px;
+      &:not(:last-child) {
+        border-bottom: 1px solid #e1e1e1;
+        @include tablet {
+          padding-top: 32px;
+          padding-bottom: 32px;
+        }
+
+        @include desktop {
+          padding-top: 32px;
+          padding-bottom: 32px;
+        }
+      }
+
+      @include desktop {
+        padding-top: 32px;
+        padding-bottom: 32px;
+      }
+    }
+  }
+
+  .contacts-list__city {
+    font-size: 12px;
+    line-height: 1.86;
+    letter-spacing: 0.04em;
+    color: var(--primary-text-color);
+    @include tablet {
+      font-size: 14px;
+    }
+    @include desktop {
+      font-size: 16px;
+    }
+  }
+
+  .contacts-list__text {
+    padding-right: 20px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #907e82;
+    @include tablet {
+      padding-right: 1px;
+      font-size: 14px;
+      line-height: 1.66;
     }
 
     @include desktop {
-      padding-top: 32px;
-      padding-bottom: 32px;
+      font-size: 16px;
+      line-height: 1.83;
+      padding-right: 60px;
     }
   }
-}
-
-.contacts-list__city {
-  font-size: 12px;
-  line-height: 1.86;
-  letter-spacing: 0.04em;
-  color: var(--primary-text-color);
-  @include tablet {
-    font-size: 14px;
-  }
-  @include desktop {
-    font-size: 16px;
-  }
-}
-
-.contacts-list__text {
-  max-width: 250px;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  color: #907e82;
-  @include tablet {
-    font-size: 14px;
-    line-height: 1.66;
-  }
-
-  @include desktop {
-    font-size: 16px;
-    line-height: 1.83;
-  }
-}
-.contacts-list__day {
-  font-size: 12px;
-  line-height: 1.86;
-  letter-spacing: 0.04em;
-  color: var(--primary-text-color);
-  @include tablet {
-    font-size: 14px;
+  .contacts-list__day {
+    font-size: 12px;
     line-height: 1.86;
+    letter-spacing: 0.04em;
+    color: var(--primary-text-color);
+    @include tablet {
+      font-size: 14px;
+      line-height: 1.86;
+    }
+
+    @include desktop {
+      font-size: 16px;
+      line-height: 1.86;
+    }
   }
 
-  @include desktop {
+  .contacts__hour {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.86;
+    color: var(--third-text-color);
+    @include tablet {
+      font-size: 14px;
+      line-height: 1.86;
+    }
+
+    @include desktop {
+      font-size: 16px;
+      line-height: 1.86;
+    }
+  }
+  .day--margin {
+    margin-bottom: 8px;
+    @include tablet {
+      margin-bottom: 12px;
+    }
+
+    @include desktop {
+      margin-bottom: 12px;
+    }
+  }
+  .contacts-list__link {
+    display: block;
     font-size: 16px;
-    line-height: 1.86;
-  }
-}
+    line-height: 1.5;
+    color: #907e82;
+    transition: background-color 280ms cubic-bezier(0.4, 0, 0.2, 1);
 
-.contacts__hour {
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.86;
-  color: var(--third-text-color);
-  @include tablet {
-    font-size: 14px;
-    line-height: 1.86;
+    &:hover,
+    &:focus {
+      color: var(--third-text-color);
+    }
+
+    @include tablet {
+      font-size: 14px;
+      line-height: 1.66;
+    }
+
+    @include desktop {
+      font-size: 16px;
+      line-height: 1.83;
+    }
+  }
+  .contacts-btn {
+    display: block;
+    align-items: center;
+    text-align: center;
+    margin-top: 32px;
+    @include mobile {
+      margin-bottom: -10px;
+    }
+
+    @include tablet {
+      margin-top: 60px;
+      display: flex;
+      justify-content: center;
+    }
+    @include desktop {
+      margin-top: 60px;
+      display: flex;
+      justify-content: center;
+    }
+  }
+  .contacts-btn__item {
+    @include mobile {
+      margin-bottom: 10px;
+    }
+    @include tablet {
+      margin-right: 15px;
+    }
+    @include desktop {
+      margin-right: 15px;
+    }
   }
 
-  @include desktop {
-    font-size: 16px;
-    line-height: 1.86;
-  }
-}
-.day--margin {
-  margin-bottom: 8px;
-  @include tablet {
-    margin-bottom: 12px;
-  }
+  .contacts-btn__button-loc {
+    font-weight: 700;
 
-  @include desktop {
-    margin-bottom: 12px;
-  }
-}
-.contacts-list__link {
-  display: block;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #907e82;
-  @include tablet {
-    font-size: 14px;
-    line-height: 1.66;
-  }
-
-  @include desktop {
     font-size: 16px;
     line-height: 1.83;
   }

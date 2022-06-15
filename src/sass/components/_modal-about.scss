@@ -1,0 +1,240 @@
+.about-backdrop {
+  position: fixed;
+  top: 0;
+  background-color: rgba(255, 245, 246, 0.2);
+
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.about-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  border-radius: 20px;
+  overflow: auto;
+
+  background-color: #fff5f6;
+
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+  background-image: radial-gradient(
+    circle farthest-corner at 50.4% 50.5%,
+    rgba(255, 245, 246, 1) 0%,
+    rgba(255, 184, 202, 1) 90%
+  );
+
+  @media screen and (min-width: 320px) {
+    height: 77vh;
+    width: 77vw;
+    padding: 15px;
+  }
+  @media screen and (min-width: 768px) {
+    height: 96vh;
+    width: 57vw;
+  }
+  @media screen and (min-width: 1280px) {
+    height: 650px;
+    width: 500px;
+    padding: 16px;
+  }
+}
+
+.about-modal__close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  border: transparent;
+  background: transparent;
+  color: transparent;
+}
+
+.close-about-modal__icon {
+  stroke: #ffffff;
+  &:hover {
+    stroke: var(--accent-color);
+  }
+}
+
+.about-modal__gallery {
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 320px) {
+    margin-top: 20px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 50px;
+  }
+}
+
+.about-modal__title {
+  font-family: 'Titan One';
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  width: 218px;
+  margin-bottom: 20px;
+
+  color: var(--accent-color);
+}
+
+.about-modal__text {
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.58;
+
+  color: #000000;
+}
+
+.full {
+  @media screen and (min-width: 320px) {
+    width: 77vw;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 700px;
+  }
+}
+
+.hidden {
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+
+.about-modal__more {
+  position: absolute;
+  border: transparent;
+  color: transparent;
+  background-color: transparent;
+
+  @media screen and (min-width: 320px) {
+    padding: 80px 80px;
+    right: 6px;
+    top: 65px;
+  }
+  @media screen and (min-width: 768px) {
+    padding: 130px 130px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding: 190px 190px;
+    right: 55px;
+    top: 60px;
+  }
+}
+
+.about-modal__more-second {
+  position: absolute;
+  border: transparent;
+  color: transparent;
+  background-color: transparent;
+
+  padding: 190px 190px;
+  right: 50px;
+  top: 700px;
+}
+
+// MODAL-2
+
+.modal-img {
+  position: absolute;
+
+  @media screen and (min-width: 320px) {
+    position: absolute;
+    width: 145px;
+    height: 250px;
+    right: 0px;
+    top: -2px;
+  }
+
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    width: 240px;
+    height: 250px;
+    right: 0px;
+    top: -2px;
+  }
+  @media screen and (min-width: 1280px) {
+    right: -0;
+    top: -1px;
+    width: 500px;
+    height: 500px;
+  }
+}
+
+.modal-backdrop__modal {
+  position: fixed;
+  overflow-y: auto;
+
+  background-color: #fff5f6;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+  background-image: radial-gradient(
+    circle farthest-corner at 50.4% 50.5%,
+    rgba(255, 245, 246, 1) 2%,
+    rgba(255, 184, 202, 1) 75%
+  );
+
+  @media screen and (min-width: 320px) {
+    padding: 16px;
+    width: 100%;
+    height: 100%;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 100%;
+    height: 100%;
+    padding: 100px;
+  }
+}
+
+.close-modal-backdrop__modal {
+  position: absolute;
+
+  border: transparent;
+  color: transparent;
+  background-color: transparent;
+
+  @media screen and (min-width: 320px) {
+    padding: 80px 80px;
+    right: 5px;
+    top: 5px;
+  }
+  @media screen and (min-width: 768px) {
+    padding: 100px 100px;
+    right: 5px;
+    top: 5px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding: 190px 190px;
+    right: 50px;
+    top: 85px;
+  }
+}
+
+.modal-card {
+  @media screen and (min-width: 320px) {
+    padding-top: 90px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 0;
+    &:first-child {
+      padding-top: 90px;
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    display: inline-block;
+    margin-top: 40px;
+
+    &:first-child {
+      margin-top: 0;
+      padding: 0;
+    }
+  }
+}
