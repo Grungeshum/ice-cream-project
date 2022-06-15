@@ -109,3 +109,20 @@
   opacity: 0;
   pointer-events: none;
 }
+
+.btn-top {
+  position: fixed;
+  font-family: 'Titan One';
+  font-weight: 400;
+  right: 7px;
+  top: 5%;
+  padding: 10px 0 10px 10px;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: none;
+  z-index: 0;
+}
+
+.btn-top-link {
+  color: #ffb8ca;
+}
