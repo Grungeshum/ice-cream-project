@@ -105,9 +105,9 @@ a {
 // .current {
 //   color: var(--accent-color);
 // }
-.mobile-menu__link {
-  color: var(--secondary-text-color);
-}
+// .mobile-menu__link {
+//   color: var(--secondary-text-color);
+// }
 
 .mobile-menu-button {
   font-family: inherit;
@@ -115,7 +115,7 @@ a {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.28;
-
+  color: var(--secondary-text-color);
   width: 100%;
   display: flex;
   padding-top: 10px;
